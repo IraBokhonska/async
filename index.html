@@ -6,12 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   <link rel="stylesheet" href="./assets/styles/css/style.css">
 </head>
 
 <body>
-  <div class="wrapper"></div>
+  <form action="get" class="form__container">
+    <div class="form__search">
+      <input class="input" tabindex="1" type="text" name="s" required />
+    </div>
+    <div class="form__type type">
+      <div class="type__input">
+        <input checked id="movie" type="radio" name="type" value="movie"/>
+        <label for="movie">Movie</label>
+      </div>
+      <div class="type__input">
+        <input checked id="series" type="radio" name="type" value="series"/>
+        <label for="series">Series</label>
+      </div>
+      <div class="type__input">
+        <input checked id="episode" type="radio" name="type" value="episode"/>
+        <label for="episode">Episode</label>
+      </div>
+    </div>
+    <div class="form__button">
+      <button type="submit" class="button">Search</button>
+    </div>
+  </form>
+  <ul class="film__list">
+  </ul>
+  <script src="./script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
