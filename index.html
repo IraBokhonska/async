@@ -11,30 +11,34 @@
 </head>
 
 <body>
-  <form class="form__container">
-    <div class="form__search" method="get">
-      <input class="search" type="text" name="s" value="2" required />
-    </div>
-    <div class="form__type type">
-      <div class="type__input">
-        <input class="type" checked id="movie" type="radio" name="type" value="movie" />
-        <label for="movie">Movie</label>
+  <div class="wrapper">
+    <form class="form__container">
+      <div class="form__search" method="get">
+        <input class="search" type="text" name="s" value="Enter name" required />
       </div>
-      <div class="type__input">
-        <input class="type" id="series" type="radio" name="type" value="series" />
-        <label for="series">Series</label>
+      <div class="form__type type">
+        <div class="type__input">
+          <input class="type" checked id="movie" type="radio" name="type" value="movie" />
+          <label for="movie">Movie</label>
+        </div>
+        <div class="type__input">
+          <input class="type" id="series" type="radio" name="type" value="series" />
+          <label for="series">Series</label>
+        </div>
+        <div class="type__input">
+          <input class="type" id="episode" type="radio" name="type" value="episode" />
+          <label for="episode">Episode</label>
+        </div>
       </div>
-      <div class="type__input">
-        <input class="type" id="episode" type="radio" name="type" value="episode" />
-        <label for="episode">Episode</label>
+      <div class="form__button">
+        <button type="submit" class="button">Search</button>
       </div>
-    </div>
-    <div class="form__button">
-      <button type="submit" class="button">Search</button>
-    </div>
-  </form>
-  <ul class="film__list">
-  </ul>
+    </form>
+    <ul class="film__list">
+    </ul>
+    <ul class="film__pagination">
+    </ul>
+  </div>
   <script src="./script.js"></script>
 </body>
 
